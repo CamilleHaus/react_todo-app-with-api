@@ -23,7 +23,7 @@ export const App: React.FC = () => {
       .finally(() => {
         dispatch({ type: 'stopUpdate' });
       });
-  }, []);
+  }, [dispatch]);
 
   if (!USER_ID) {
     return <UserWarning />;
