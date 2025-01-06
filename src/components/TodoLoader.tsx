@@ -3,11 +3,11 @@ import { StatesContext } from '../context/Store';
 import { useContext } from 'react';
 import { Todo } from '../types/Todo';
 
-type Props = {
+type PropsTodoLoader = {
   todo: Todo;
 };
 
-export const TodoLoader: React.FC<Props> = ({ todo }) => {
+export const TodoLoader: React.FC<PropsTodoLoader> = ({ todo }) => {
   const { isUpdating, selectedTodo, tempTodo } = useContext(StatesContext);
 
   return (
